@@ -1,4 +1,4 @@
-<!-- FORMAL CORPORATE HERO CARD -->
+ 
 <div align="center">
   <table border="0" width="100%" style="background: #161b22; border: 1px solid #30363d; border-radius: 12px; border-collapse: collapse;">
     <tr style="border: none;">
@@ -37,7 +37,7 @@
 
 ### 💫 Executive Summary & Background
 
-- 🚀 **Flagship Build**: Founder of **[Mera Paisaa](https://merapaisaa.vercel.app)** – An offline-first, privacy-focused personal expense tracker for India.
+- 🚀 **Flagship Build**: Founder of **[Mera Paisaa](https://merapaisaa.abvicky.in)** – An offline-first, privacy-focused personal expense tracker for India.
 - 🎓 **Academic Background**: B.Tech in Information Technology & Software Engineering (Class of 2025).
 - 👥 **Leadership & Mentorship**: Founder of **Coders' Club BBIT** (est. 2022) & Tech Mentor at **Digispire Academy**.
 - 💡 **Engineering Principles**: Clean architecture, testable codebases, high reliability, and data privacy.
@@ -68,7 +68,7 @@
 
 ### 🌟 Key Projects & Software Systems
 
-#### 💳 [Mera Paisaa](https://github.com/ABVicky/merapaisaa) • [Launch App](https://merapaisaa.vercel.app)
+#### 💳 [Mera Paisaa](https://github.com/ABVicky/merapaisaa) • [Launch App](https://merapaisaa.abvicky.in)
 > **Offline-First Personal Expense Tracker**  
 > Privacy-focused expense management application engineered for Indian users. Operates seamlessly offline with local data persistence and zero mandatory cloud syncs.  
 > 
@@ -102,6 +102,16 @@
     <li>⚡ <b><a href="https://github.com/ABVicky/monorepo-turborepo">Monorepo Turborepo</a></b> – Scalable monorepo template for full-stack applications. <code>Turborepo</code> <code>TypeScript</code></li>
   </ul>
 </details>
+
+---
+
+### 🎮 Developer Arcade & Contribution Snake Game
+
+<div align="center">
+  <p style="color: #8b949e; font-size: 14px;"><i>Watch the snake slither through my GitHub contribution graph eating commits! 🐍</i></p>
+  <br/>
+  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake Game" width="100%" />
+</div>
 
 ---
 
