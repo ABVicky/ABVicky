@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO PRIMARY META TAGS -->
   <title>Vicky Prasad Mahato - System Architect & Product Engineer | Portfolio & GitHub Profile</title>
   <meta name="title" content="Vicky Prasad Mahato - System Architect & Product Engineer | Portfolio & GitHub Profile">
@@ -38,271 +38,171 @@
     "image": "https://avatars.githubusercontent.com/u/103195071?v=4",
     "jobTitle": "System Architect & Product Engineer",
     "email": "mailto:abvicky01@gmail.com",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Mera Paisaa"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Budge Budge Institute of Technology (BBIT)"
-    },
+    "worksFor": { "@type": "Organization", "name": "Mera Paisaa" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Patna (IIT Patna)" },
+      { "@type": "EducationalOrganization", "name": "Budge Budge Institute of Technology (BBIT)" }
+    ],
     "sameAs": [
       "https://github.com/ABVicky",
       "https://linkedin.com/in/abvicky",
       "https://quora.com/profile/AB-Vicky-Prasad-Mahato",
       "https://abvicky.in"
     ],
-    "knowsAbout": [
-      "Software Architecture",
-      "TypeScript",
-      "React.js",
-      "Next.js",
-      "Flutter",
-      "Node.js",
-      "PostgreSQL",
-      "System Design"
-    ]
+    "knowsAbout": ["Software Architecture", "TypeScript", "React.js", "Next.js", "Flutter", "Node.js", "PostgreSQL", "System Design"]
   }
   </script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-dark.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Local preview of README.md as GitHub renders it. Toggle the GitHub theme with the button. -->
+  <link id="gh-css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <style>
+    :root { --bg: #0d1117; --border: #30363d; --muted: #8b949e; --chip: #21262d; }
+    html[data-theme="light"] { --bg: #ffffff; --border: #d0d7de; --muted: #59636e; --chip: #f6f8fa; }
     body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      background: var(--bg);
       margin: 0;
-      padding: 2rem 1rem;
-      display: flex;
-      justify-content: center;
+      padding: 32px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
     }
-    .container {
-      max-width: 890px;
-      width: 100%;
-      background: #0d1117;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 32px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    .frame { max-width: 896px; margin: 0 auto; border: 1px solid var(--border); border-radius: 6px; }
+    .bar {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 10px 16px; border-bottom: 1px solid var(--border);
+      color: var(--muted); font-size: 12px; font-weight: 600;
     }
-    .header-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #30363d;
+    .bar span { display: flex; align-items: center; gap: 8px; }
+    .bar button {
+      font: inherit; color: var(--muted); background: var(--chip); cursor: pointer;
+      border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px;
     }
-    .header-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: #8b949e;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .markdown-body { padding: 24px; background: transparent; }
+    @media (max-width: 600px) { body { padding: 0; } .frame { border: 0; } .markdown-body { padding: 16px; } }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header-bar">
-      <div class="header-title">
-        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
-        ABVicky / README.md (Email Corrected Preview)
-      </div>
-      <span style="font-size:12px; background:#238636; color:white; padding: 2px 8px; border-radius: 12px; font-weight:600;">GitHub Render Preview</span>
+  <div class="frame">
+    <div class="bar">
+      <span>
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+        ABVicky / README.md — local preview
+      </span>
+      <button id="theme" type="button">GitHub theme: dark</button>
     </div>
     <article id="content" class="markdown-body"></article>
   </div>
 
   <script type="text/template" id="raw-markdown">
-<!-- FORMAL CORPORATE HERO CARD -->
-<div align="center">
-  <table border="0" width="100%" style="background: #161b22; border: 1px solid #30363d; border-radius: 12px; border-collapse: collapse;">
-    <tr style="border: none;">
-      <td width="28%" align="center" valign="middle" style="padding: 24px; border: none;">
-        <a href="https://abvicky.in" target="_blank">
-          <img src="https://avatars.githubusercontent.com/u/103195071?v=4" width="150" height="150" style="border-radius: 50%; border: 3px solid #58A6FF;" alt="Vicky Prasad Mahato - System Architect & Product Engineer Profile Picture" />
-        </a>
-      </td>
-      <td width="72%" align="left" valign="middle" style="padding: 24px 24px 24px 0; border: none;">
-        <div style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #58A6FF; margin-bottom: 6px;">SYSTEM ARCHITECT &bull; PRODUCT ENGINEER &bull; TECH ENTREPRENEUR</div>
-        <h1 style="border: none; margin: 0 0 8px 0; font-size: 26px; font-weight: 700; color: #ffffff;"><b>Vicky Prasad Mahato</b></h1>
-        <p style="color: #8b949e; font-size: 14px; margin: 0 0 14px 0; line-height: 1.5;">
-          Building scalable web architectures, privacy-first software solutions, and leading developer mentorship programs in Kolkata, West Bengal, India 🇮🇳
-        </p>
-        <p style="margin: 0;">
-          <a href="https://merapaisaa.abvicky.in" target="_blank"><img src="https://img.shields.io/badge/Flagship-Mera_Paisaa-0969DA?style=flat&logoColor=white" alt="Mera Paisaa - Offline-First Personal Expense Tracker" /></a>
-          <a href="https://abvicky.in" target="_blank"><img src="https://img.shields.io/badge/Portfolio-abvicky.in-21262D?style=flat&logo=firefox&logoColor=white" alt="Vicky Prasad Mahato Official Portfolio Website" /></a>
-          <a href="https://linkedin.com/in/abvicky" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Vicky_Mahato-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="Vicky Prasad Mahato LinkedIn Profile" /></a>
-          <a href="https://github.com/ABVicky" target="_blank"><img src="https://img.shields.io/badge/GitHub-@ABVicky-21262D?style=flat&logo=github&logoColor=white" alt="Vicky Prasad Mahato GitHub Repositories" /></a>
-        </p>
-      </td>
-    </tr>
-  </table>
-</div>
+<a name="abv-top"></a>
 
-<br/>
+<p align="center">
+  <a href="https://abvicky.in"><img src="assets/hero.svg" width="100%" alt="abvicky.in — Vicky Prasad Mahato. System Architect, Product Engineer and Founder, M.Tech from IIT Patna. I build offline-first, privacy-first software and grow the developer communities around it. Based in Kolkata, India."></a>
+</p>
 
-<!-- ANIMATED TYPING CODE LINE -->
-<div align="center">
-  <a href="https://abvicky.in">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=58A6FF&center=true&vcenter=true&width=750&lines=System.Architect(%22Vicky+Prasad+Mahato%22)%3B;ProductEngineer.build(%22Mera+Paisaa%22)%3B+%2F%2F+Fintech;FullStack.deploy(%5B%22TypeScript%22%2C+%22React%22%2C+%22Flutter%22%5D)%3B;TechEntrepreneur.lead(%22Coders'+Club+BBIT%22)%3B" alt="Vicky Prasad Mahato - Interactive Code Matrix & Systems Overview" />
-  </a>
-</div>
+<p align="center">
+  <a href="#abv-work"><img src="assets/nav-work.svg" width="19%" alt="01 Work"></a>
+  <a href="#abv-stack"><img src="assets/nav-stack.svg" width="19%" alt="02 Stack"></a>
+  <a href="#abv-arcade"><img src="assets/nav-arcade.svg" width="19%" alt="03 Arcade"></a>
+  <a href="#abv-contact"><img src="assets/nav-contact.svg" width="19%" alt="04 Contact"></a>
+  <a href="https://abvicky.in"><img src="assets/nav-site.svg" width="19%" alt="Visit abvicky.in"></a>
+</p>
 
----
+<p align="center">
+  <img src="assets/about.svg" width="100%" alt="About: Engineer by degree, founder by habit, mentor by choice. Highest qualification: M.Tech from IIT Patna. B.Tech in Information Technology and Software Engineering, class of 2025. Founder of Mera Paisaa, Tech Mentor at Digispire Academy, founded Coders' Club BBIT in 2022. Principles: clean architecture, testable code, reliability, performance, data privacy.">
+</p>
 
-### 💫 Executive Summary & Background
+<p align="center">
+  <a name="abv-work"></a><a href="#abv-top"><img src="assets/section-work.svg" width="100%" alt="01 — Selected work"></a>
+</p>
 
-- 🚀 **Flagship Build**: Founder of **[Mera Paisaa](https://merapaisaa.abvicky.in)** – An offline-first, privacy-focused personal expense tracker for Indian users.
-- 🎓 **Academic Background**: B.Tech in Information Technology & Software Engineering (Class of 2025).
-- 👥 **Leadership & Mentorship**: Founder of **Coders' Club BBIT** (est. 2022) & Tech Mentor at **Digispire Academy**.
-- 💡 **Engineering Principles**: Clean architecture, testable codebases, high reliability, system performance, and data privacy.
-- 💬 **Technical Competencies**: TypeScript, JavaScript (ES6+), React.js, Next.js, Flutter, Node.js, PostgreSQL, MongoDB, Docker, and System Architecture.
+<p align="center">
+  <a href="https://merapaisaa.abvicky.in"><img src="assets/work-merapaisaa.svg" width="100%" alt="Flagship: Mera Paisaa — an offline-first, privacy-focused personal expense tracker for Indian users. TypeScript, React.js, Tailwind CSS, PWA, Vercel. Opens the live app."></a>
+</p>
 
----
+<p align="center">
+  <a href="https://github.com/ABVicky/JewelPOS"><img src="assets/work-jewelpos.svg" width="49%" alt="JewelPOS — cross-platform point of sale and inventory system for jewelry retail. Dart, Flutter. Opens the repository."></a>
+  <a href="https://digispire-academy.vercel.app"><img src="assets/work-digispire.svg" width="49%" alt="Digispire Academy — EdTech learning and mentorship portal. JavaScript, React.js, Vercel. Opens the live portal."></a>
+</p>
 
-### 🛠️ Technical Skill Arsenal & Stack Matrix
+<p align="center">
+  <a href="https://veri-crm-nine.vercel.app"><img src="assets/work-vericrm.svg" width="49%" alt="VeriCRM — CRM for sales pipelines and lead automation. Opens the live demo."></a>
+  <a href="https://github.com/ABVicky/hrms"><img src="assets/work-hrms.svg" width="49%" alt="HRMS — onboarding, attendance and performance analytics portal. Opens the repository."></a>
+  <a href="https://priyadarshi-ias-academy.vercel.app"><img src="assets/work-ias.svg" width="49%" alt="Priyadarshi IAS Academy — portal for IAS coaching and competitive-exam resources. Opens the live site."></a>
+  <a href="https://github.com/ABVicky/monorepo-turborepo"><img src="assets/work-turborepo.svg" width="49%" alt="Monorepo Turborepo — scalable monorepo template for full-stack apps. Opens the repository."></a>
+</p>
 
-<div align="center">
-  <p><b>FULL-STACK TECHNOLOGY & TOOLING ARSENAL</b></p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,dart,py,java,react,nextjs,flutter,tailwind,nodejs,postgres,mongodb,docker,git,figma,vercel&perline=8" alt="Vicky Prasad Mahato Tech Stack: TypeScript, JavaScript, Dart, Python, Java, React, Next.js, Flutter, Tailwind CSS, Node.js, PostgreSQL, MongoDB, Docker, Git, Figma, Vercel" />
-  </a>
-</div>
+<p align="center">
+  <a href="https://abvicky.in"><img src="assets/work-coders-club.svg" width="100%" alt="Coders' Club BBIT — student developer community founded in 2022: open source, competitive programming, hackathons and mentorship in Kolkata."></a>
+</p>
 
-<br/>
+<p align="center">
+  <sub><b>SOURCE CODE →</b>
+  <a href="https://github.com/ABVicky/merapaisaa">merapaisaa</a> ·
+  <a href="https://github.com/ABVicky/Digispire-Academy">Digispire-Academy</a> ·
+  <a href="https://github.com/ABVicky/VeriCRM">VeriCRM</a> ·
+  <a href="https://github.com/ABVicky/Priyadarshi-IAS-Academy">Priyadarshi-IAS-Academy</a> ·
+  <a href="https://github.com/ABVicky?tab=repositories">all repositories ↗</a></sub>
+</p>
 
-```text
-┌── 💻 Core Languages : TypeScript, JavaScript (ES6+), Dart, Python, Java, HTML5, CSS3
-├── ⚛️ Frontend Frameworks : React.js, Next.js, Flutter, Tailwind CSS, Vite, Framer Motion
-├── ⚙️ Backend & Storage   : Node.js, Express.js, REST APIs, PostgreSQL, MongoDB, Firebase
-├── 🛠️ DevOps & Tooling    : Git, GitHub, Turborepo, Vercel, Docker, Linux, WordPress
-└── 🎨 Media & UI Design   : Figma, Adobe Premiere Pro, Canva, GIMP, Adobe Creative Cloud
-```
+<p align="center">
+  <a name="abv-stack"></a><a href="#abv-top"><img src="assets/section-stack.svg" width="100%" alt="02 — The stack"></a>
+</p>
 
----
+<p align="center">
+  <img src="assets/stack.svg" width="100%" alt="The stack, printed as a receipt. Core languages: TypeScript, JavaScript (ES6+), Dart, Python, Java, HTML5, CSS3. Frontend: React.js, Next.js, Flutter, Tailwind CSS, Vite, Framer Motion. Backend and storage: Node.js, Express.js, REST APIs, PostgreSQL, MongoDB, Firebase. DevOps and tooling: Git, GitHub, Turborepo, Vercel, Docker, Linux, WordPress. Media and UI design: Figma, Adobe Premiere Pro, Canva, GIMP, Adobe Creative Cloud.">
+</p>
 
-### 🌟 Featured Projects & Software Systems
+<p align="center">
+  <a name="abv-arcade"></a><a href="#abv-top"><img src="assets/section-arcade.svg" width="100%" alt="03 — Arcade"></a>
+</p>
 
-#### 💳 [Mera Paisaa](https://github.com/ABVicky/merapaisaa) • [Launch App](https://merapaisaa.abvicky.in)
-> **Offline-First Personal Expense Tracker & Fintech Application**  
-> Privacy-focused expense management application engineered for Indian users. Operates seamlessly offline with local data persistence and zero mandatory cloud tracking. Built using TypeScript, React.js, Tailwind CSS, and Progressive Web App (PWA) standards.  
-> 
-> `TypeScript` • `React.js` • `Tailwind CSS` • `Vercel` • `PWA` • `Fintech`
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ABVicky/ABVicky/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ABVicky/ABVicky/output/github-snake.svg">
+    <img src="https://raw.githubusercontent.com/ABVicky/ABVicky/output/github-snake.svg" width="100%" alt="A snake eating Vicky's GitHub contribution graph">
+  </picture>
+</p>
 
-#### 💎 [JewelPOS](https://github.com/ABVicky/JewelPOS) • [Source Code](https://github.com/ABVicky/JewelPOS)
-> **Jewelry Point of Sale & Inventory Management System**  
-> Cross-platform Point of Sale (POS) and real-time inventory tracking platform built for retail jewelry businesses. Features stock tracking, sales billing, and customer analytics.  
-> 
-> `Dart` • `Flutter` • `Mobile App` • `Cross-Platform` • `Inventory System`
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ABVicky&bg_color=F4EFE6&color=141414&title_color=141414&line=FF5B1F&point=141414&area=true&area_color=FFD43B&hide_border=true&radius=16&custom_title=Commit%20pulse" width="100%" alt="Vicky's GitHub contribution activity graph">
+</p>
 
-#### 🎓 [Digispire Academy](https://github.com/ABVicky/Digispire-Academy) • [Live Portal](https://digispire-academy.vercel.app)
-> **EdTech Learning & Mentorship Portal**  
-> Full-stack learning platform powering student developer training programs, digital workshops, course management, and technology bootcamps.  
-> 
-> `JavaScript` • `React.js` • `Web Platform` • `Vercel` • `EdTech`
+<p align="center">
+  <a name="abv-contact"></a><a href="mailto:abvicky01@gmail.com"><img src="assets/contact.svg" width="100%" alt="Let's build something that works offline. Open for technical consulting, software-architecture roles, full-stack projects and engineering collaborations. Email abvicky01@gmail.com"></a>
+</p>
 
-#### 👥 [Coders' Club BBIT](https://github.com/ABVicky) • [Community Hub](https://abvicky.in)
-> **Developer Community & Open Source Leadership**  
-> Founded in 2022 to foster coding culture, open-source projects, competitive programming, hackathons, and technical mentorship for student engineers in Kolkata.  
-> 
-> `Leadership` • `Community` • `Mentorship` • `Open Source` • `Tech Education`
+<p align="center">
+  <a href="https://linkedin.com/in/abvicky"><img src="assets/btn-linkedin.svg" width="24%" alt="LinkedIn — in/abvicky"></a>
+  <a href="https://github.com/ABVicky"><img src="assets/btn-github.svg" width="24%" alt="GitHub — @ABVicky"></a>
+  <a href="https://quora.com/profile/AB-Vicky-Prasad-Mahato"><img src="assets/btn-quora.svg" width="24%" alt="Quora — AB-Vicky-Prasad-Mahato"></a>
+  <a href="https://abvicky.in"><img src="assets/btn-website.svg" width="24%" alt="Website — abvicky.in"></a>
+</p>
 
-<details>
-  <summary>📂 <b>View Additional Repositories (VeriCRM, HRMS, IAS Academy, Turborepo Monorepo)</b></summary>
-  <br/>
-  <ul>
-    <li>📊 <b><a href="https://github.com/ABVicky/VeriCRM">VeriCRM</a></b> – Enterprise Customer Relationship Management platform for managing sales pipelines & lead automation. <code>TypeScript</code> <code>React</code> (<a href="https://veri-crm-nine.vercel.app">Live Demo</a>)</li>
-    <li>👥 <b><a href="https://github.com/ABVicky/hrms">HRMS System</a></b> – Employee onboarding, attendance tracking & performance analytics portal. <code>TypeScript</code> <code>PostgreSQL</code></li>
-    <li>🏛️ <b><a href="https://github.com/ABVicky/Priyadarshi-IAS-Academy">Priyadarshi IAS Academy</a></b> – Educational portal for IAS coaching and competitive exam resources. <code>TypeScript</code> <code>React</code> (<a href="https://priyadarshi-ias-academy.vercel.app">Live Web</a>)</li>
-    <li>⚡ <b><a href="https://github.com/ABVicky/monorepo-turborepo">Monorepo Turborepo</a></b> – Scalable monorepo architecture template for full-stack web applications. <code>Turborepo</code> <code>TypeScript</code></li>
-  </ul>
-</details>
+<p align="center">
+  <a href="#abv-top"><img src="assets/footer.svg" width="100%" alt="© 2026 Vicky Prasad Mahato — abvicky.in. Back to top."></a>
+</p>
 
----
-
-### 🎮 Developer Arcade & Contribution Snake Game
-
-<div align="center">
-  <p style="color: #8b949e; font-size: 14px;"><i>Watch the snake slither through my GitHub contribution graph eating commits! 🐍</i></p>
-  <br/>
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Vicky Prasad Mahato - GitHub Contribution Grid Snake Game Animation" width="100%" />
-</div>
-
----
-
-### 📈 Activity & Development Metrics
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ABVicky&theme=github-dark" alt="Vicky Prasad Mahato - GitHub Contribution Activity Graph" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ABVicky&theme=github_dark" alt="Vicky Prasad Mahato - GitHub Profile Summary & Repositories Card" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ABVicky&theme=github_dark" alt="Vicky Prasad Mahato - Top Programming Languages Distribution" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=ABVicky&theme=github_dark" alt="Vicky Prasad Mahato - GitHub Streak Statistics" />
-</div>
-
----
-
-### 🤝 Professional Contact & External Links
-
-<div align="center">
-  <p style="color: #8b949e; font-size: 14px;">Open for technical consulting, software architecture roles, full-stack development projects, and engineering collaborations.</p>
-
-  <p>
-    <a href="https://abvicky.in" target="_blank">
-      <img src="https://img.shields.io/badge/Official_Website-abvicky.in-21262D?style=flat&logo=firefox&logoColor=white" alt="Vicky Prasad Mahato Official Website - abvicky.in" />
-    </a>
-    <a href="https://linkedin.com/in/abvicky" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-Vicky_Mahato-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="Vicky Prasad Mahato LinkedIn Profile" />
-    </a>
-    <a href="https://github.com/ABVicky" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-@ABVicky-21262D?style=flat&logo=github&logoColor=white" alt="Vicky Prasad Mahato GitHub Developer Profile" />
-    </a>
-    <a href="https://quora.com/profile/AB-Vicky-Prasad-Mahato" target="_blank">
-      <img src="https://img.shields.io/badge/Quora-Vicky_Mahato-21262D?style=flat&logo=quora&logoColor=white" alt="Vicky Prasad Mahato Quora Profile" />
-    </a>
-    <a href="mailto:abvicky01@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-abvicky01@gmail.com-0969DA?style=flat&logo=gmail&logoColor=white" alt="Email Vicky Prasad Mahato" />
-    </a>
-  </p>
-</div>
-
-<br/>
-
----
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github_dark" alt="Developer Quote of the Day" />
-  
-  <br/><br/>
-
-  <a href="https://abvicky.in" target="_blank">
-    <img src="https://komarev.com/ghpvc/?username=ABVicky&color=0969DA&style=flat&label=PROFILE+VIEWS" alt="Vicky Prasad Mahato GitHub Profile Page Views Counter" />
-  </a>
-
-  <br/><br/>
-
-  <p style="color: #8b949e; font-size: 12px;">
-    Vicky Prasad Mahato &bull; System Architect & Product Engineer &bull; Kolkata, India 🇮🇳
-  </p>
-</div>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ABVicky&color=FF5B1F&style=flat-square&label=VISITORS" alt="Profile views">
+</p>
   </script>
 
   <script>
-    const rawMarkdown = document.getElementById('raw-markdown').innerHTML;
-    document.getElementById('content').innerHTML = marked.parse(rawMarkdown);
+    const css = {
+      dark: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-dark.min.css',
+      light: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css'
+    };
+    const btn = document.getElementById('theme');
+    function setTheme(t) {
+      document.documentElement.dataset.theme = t;
+      document.getElementById('gh-css').href = css[t];
+      btn.textContent = 'GitHub theme: ' + t;
+    }
+    btn.addEventListener('click', () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+    const params = new URLSearchParams(location.search);
+    if (params.get('theme') === 'light') setTheme('light');
+    document.getElementById('content').innerHTML = marked.parse(document.getElementById('raw-markdown').innerHTML);
   </script>
 </body>
 </html>
