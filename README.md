@@ -1,7 +1,7 @@
 <a name="abv-top"></a>
 
 <p align="center">
-  <a href="https://abvicky.in"><img src="assets/hero.svg" width="100%" alt="abvicky.in — Vicky Prasad Mahato. System Architect, Product Engineer and Founder, M.Tech from IIT Patna. I turn real problems into shipped products: software, hardware and everything in between. Based in Kolkata, India."></a>
+  <a href="https://abvicky.in"><img src="assets/hero.svg" width="100%" alt="abvicky.in — Vicky Prasad Mahato. System Architect, Product Engineer and Founder, currently pursuing an M.Tech at IIT Patna. I turn real problems into shipped products: software, hardware and everything in between. Based in Kolkata, India."></a>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/about.svg" width="100%" alt="About: Engineer by degree, founder by habit, mentor by choice. Highest qualification: M.Tech from IIT Patna. B.Tech in Information Technology and Software Engineering, class of 2025. I build all kinds of software products end to end, including the hardware they talk to. Founder of Mera Paisaa, Tech Mentor at Digispire Academy, founded Coders' Club BBIT in 2022. Principles: problem first, hardware plus software, clean architecture, reliability, ship and iterate.">
+  <img src="assets/about.svg" width="100%" alt="About: Engineer by degree, founder by habit, mentor by choice. Pursuing an M.Tech at IIT Patna, after a B.Tech in Information Technology and Software Engineering, class of 2025. I build all kinds of software products end to end, including the hardware they talk to. Founder of Mera Paisaa, Tech Mentor at Digispire Academy, founded Coders' Club BBIT in 2022. Principles: problem first, hardware plus software, clean architecture, reliability, ship and iterate.">
 </p>
 
 <p align="center">
@@ -52,6 +52,10 @@
 </p>
 
 <p align="center">
+  <a href="#abv-contact"><img src="assets/tape.svg" width="100%" alt="Two crossed tapes scrolling in opposite directions: hardware + software, problem to product, shipped from Kolkata; build, break, fix, ship, repeat."></a>
+</p>
+
+<p align="center">
   <a name="abv-stack"></a><a href="#abv-top"><img src="assets/section-stack.svg" width="100%" alt="02 — The stack"></a>
 </p>
 
@@ -64,74 +68,25 @@
 </p>
 
 <p align="center">
-  <img src="assets/arcade-bughunt.svg" width="100%" alt="Bug hunt: four tiny JavaScript gotchas. Guess what each one prints, then reveal the answers below the cards.">
+  <a href="mailto:abvicky01@gmail.com?subject=I%20have%20a%20problem%20worth%20solving"><img src="assets/arcade-slots.svg" width="100%" alt="Idea machine: a slot machine that spins up product ideas, like an IoT smart dashboard for farmers or an offline-first POS system for kirana shops. Click it to email Vicky the idea."></a>
 </p>
 
 <p align="center">
-  <img src="assets/arcade-bug-1.svg" width="49%" alt="Level 1: console.log(typeof null); — what does this print?">
-  <img src="assets/arcade-bug-2.svg" width="49%" alt="Level 2: console.log(0.1 + 0.2 === 0.3); — what does this print?">
+  <img src="assets/arcade-bughunt.svg" width="100%" alt="Bug hunt: four tiny JavaScript gotchas. Guess what each one prints before its timer runs out and the answer appears.">
 </p>
 
-<details>
-<summary><a name="abv-reveal-1"><img src="assets/toggle-reveal-1.svg" height="52" align="absmiddle" alt="Reveal level 01 — typeof null"></a></summary>
-<br>
-
-**It prints `object`.** One of JavaScript's oldest quirks: a bug from the language's very first version that can't be fixed without breaking the web. Check for `null` directly instead:
-
-```js
-if (value === null) { /* handle it */ }
-```
-
-</details>
-
-<details>
-<summary><a name="abv-reveal-2"><img src="assets/toggle-reveal-2.svg" height="52" align="absmiddle" alt="Reveal level 02 — 0.1 + 0.2 === 0.3"></a></summary>
-<br>
-
-**It prints `false`.** JavaScript numbers are binary floating point, so `0.1 + 0.2` is really `0.30000000000000004`. Money apps should store amounts as whole paise (₹1 = 100 paise) and only format them for display:
-
-```js
-const total = 10 + 20;                          // paise
-console.log(total === 30);                      // true
-console.log(`₹${(total / 100).toFixed(2)}`);    // ₹0.30
-```
-
-</details>
-
 <p align="center">
-  <img src="assets/arcade-bug-3.svg" width="49%" alt="Level 3: const scores = [10, 1, 2]; console.log(scores.sort()); — what does this print?">
-  <img src="assets/arcade-bug-4.svg" width="49%" alt="Level 4: for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i)); } — what does this print?">
+  <img src="assets/arcade-bug-1.svg" width="49%" alt="Level 1: console.log(typeof null); — what does this print? After a countdown the answer appears: object. A bug from JavaScript’s very first version, kept so old sites don’t break.">
+  <img src="assets/arcade-bug-2.svg" width="49%" alt="Level 2: console.log(0.1 + 0.2 === 0.3); — what does this print? After a countdown the answer appears: false, because 0.1 + 0.2 is really 0.30000000000000004.">
 </p>
 
-<details>
-<summary><a name="abv-reveal-3"><img src="assets/toggle-reveal-3.svg" height="52" align="absmiddle" alt="Reveal level 03 — [10, 1, 2].sort()"></a></summary>
-<br>
-
-**It prints `[1, 10, 2]`.** Without a compare function, `sort()` turns every item into a string and compares them as text, so `"10"` lands before `"2"`. It also sorts the array in place. Pass a comparator, or use [`toSorted()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted) to get a new array:
-
-```js
-scores.sort((a, b) => a - b);        // [1, 2, 10]
-const ranked = scores.toSorted((a, b) => b - a); // [10, 2, 1], original untouched
-```
-
-</details>
-
-<details>
-<summary><a name="abv-reveal-4"><img src="assets/toggle-reveal-4.svg" height="52" align="absmiddle" alt="Reveal level 04 — var inside a loop"></a></summary>
-<br>
-
-**It prints `3`, `3`, `3`.** `var` is function-scoped, so all three callbacks share a single `i`, and they only run after the loop has finished, when `i` is already `3`. `let` creates a fresh `i` for every iteration:
-
-```js
-for (let i = 0; i < 3; i++) {
-  setTimeout(() => console.log(i));   // 0, 1, 2
-}
-```
-
-</details>
+<p align="center">
+  <img src="assets/arcade-bug-3.svg" width="49%" alt="Level 3: const scores = [10, 1, 2]; console.log(scores.sort()); — what does this print? After a countdown the answer appears: [1, 10, 2], because sort() compares items as text by default.">
+  <img src="assets/arcade-bug-4.svg" width="49%" alt="Level 4: for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i)); } — what does this print? After a countdown the answer appears: 3, 3, 3, because var is shared by every callback; let gives 0, 1, 2.">
+</p>
 
 <p align="center">
-  <sub>Got 4/4 without peeking? <a href="https://linkedin.com/in/abvicky">Tell me on LinkedIn ↗</a></sub>
+  <sub>Got 4/4 before the timers ran out? <a href="https://linkedin.com/in/abvicky">Tell me on LinkedIn ↗</a></sub>
 </p>
 
 <p align="center">
